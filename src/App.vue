@@ -36,7 +36,7 @@
     <img class="mx-auto" src="@/assets/vueJs.png" width="64">
   </div>
    <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/c++.png" width="64">
+    <img class="mx-auto" src="@/assets/cpp.png" width="64">
   </div>
 </div>
 
@@ -57,6 +57,9 @@
     </div>
     <div class="box vertical-center d-flex align-items-center space">
       <img class="mx-auto" src="@/assets/vsc.png" width="64">
+    </div>
+    <div class="box vertical-center d-flex align-items-center space">
+      <img class="mx-auto" src="@/assets/ubuntu.png" width="64">
     </div>
   </div>
 </div>
