@@ -35,6 +35,9 @@
   <div class="box vertical-center d-flex align-items-center space">
     <img class="mx-auto" src="@/assets/vueJs.png" width="64">
   </div>
+   <div class="box vertical-center d-flex align-items-center space">
+    <img class="mx-auto" src="@/assets/c++.png" width="64">
+  </div>
 </div>
 
 <h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes outils</h1>
