@@ -194,7 +194,7 @@ body {
 
 .text  {
   font-size: 20px;
-  color: #ffffff93;
+  color: #ffffffc9;
 }
 
 .logoDiv {
