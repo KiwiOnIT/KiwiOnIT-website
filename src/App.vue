@@ -210,6 +210,8 @@ body {
 
 .home {
   float: left;
+  margin-left: 12px;
+  margin-top: 8px;
 }
 
 .row {
