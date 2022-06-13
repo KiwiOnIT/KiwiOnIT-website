@@ -75,7 +75,7 @@
 	</div>
     <div class="card-body card-content">
         <h2>Passly</h2>
-        <p>PGenerateur de password en VueJs</p>
+        <p>Generateur de password en VueJs</p>
     </div>
   </div>
   <div class="card" style="width: 18rem;">
