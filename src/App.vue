@@ -205,7 +205,7 @@ body {
 
 .logo {
   border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .home {
@@ -244,7 +244,7 @@ body {
   display: inline-block;
   margin: 1rem;
   border-radius: 4px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transition: all 0.2s ease;
   background: #fff;
   position: relative;
@@ -252,7 +252,7 @@ body {
 }
 .card:hover, .card.hover {
   transform: translateY(-4px);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .card:hover .card-content, .card.hover .card-content {
   box-shadow: inset 0 3px 0 0 #5ea4cc;
