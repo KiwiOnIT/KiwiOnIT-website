@@ -11,7 +11,7 @@
 <div class="row justify-content-md-center vertical-center d-flex align-items-center min-vh-100 space">
   <div class="col col-lg-2">
     <h1 class="title">Salut ! Je m'appelle Anthonin (Kiwi) <img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px" style="display:initial;vertical-align:initial;"></h1>
-    <p class="text">Je suis un jeune developpeur qui touche à quelque langages et les utilise pour des petits projets</p>
+    <p class="text">Je suis un jeune développeur qui touche à quelques langages et les utilise pour des petits projets</p>
   </div>
   <div class="col-md-auto space">
     <img src="@/assets/logo.png"  class="logo" width="400" height="400">
