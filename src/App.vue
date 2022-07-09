@@ -18,51 +18,10 @@
   </div>
 </div>
 
-<h1 class="text-white title-size" style="margin-top : 3.75rem;">Mes compétences</h1>
-<div class="row justify-content-md-center">
-  <div class="box vertical-center d-flex align-items-center">
-    <img class="mx-auto" src="@/assets/Js.png" width="64">
-  </div>
-  <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/python.png" width="64">
-  </div>
-  <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/html5.png" width="64">
-  </div>
-  <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/css3.png" width="64">
-  </div>
-  <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/vueJs.png" width="64">
-  </div>
-   <div class="box vertical-center d-flex align-items-center space">
-    <img class="mx-auto" src="@/assets/cpp.png" width="64">
-  </div>
+<div style="padding: 0rem 10%;">
+  <Skill />
 </div>
 
-<h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes outils</h1>
-<div>
-  <div class="row justify-content-md-center">
-    <div class="box vertical-center d-flex align-items-center">
-      <img class="mx-auto" src="@/assets/git.png" width="64">
-    </div>
-    <div class="box vertical-center d-flex align-items-center space">
-      <img class="mx-auto" src="@/assets/terminal.png" width="64">
-    </div>
-    <div class="box vertical-center d-flex align-items-center space">
-      <img class="mx-auto" src="@/assets/npm.png" width="64">
-    </div>
-    <div class="box vertical-center d-flex align-items-center space">
-      <img class="mx-auto" src="@/assets/nodeJS.png" width="64">
-    </div>
-    <div class="box vertical-center d-flex align-items-center space">
-      <img class="mx-auto" src="@/assets/vsc.png" width="64">
-    </div>
-    <div class="box vertical-center d-flex align-items-center space">
-      <img class="mx-auto" src="@/assets/ubuntu.png" width="64">
-    </div>
-  </div>
-</div>
 <h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes projets</h1>
 <div class="row justify-content-md-center center" style="margin-top : 5.5rem;">
   <div class="card" style="width: 18rem;">
@@ -169,6 +128,13 @@
 </body>
 </template>
 
+<script>
+import Skill from '@/components/Skill';
+export default {
+	components: {Skill}
+};
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -177,12 +143,10 @@
   text-align: center;
   color: #ffffff;
 }
-
 body {
   background-color: #2b2b2b;
   color: #ffffff;
 }
-
 .card{
   background-color: #2b2b2b!important;
 }
@@ -191,37 +155,30 @@ body {
   font-size: 30px;
   color: #ffffff;
 }
-
 .text  {
   font-size: 20px;
   color: #ffffffc9;
 }
-
 .logoDiv {
   float: right;
   margin-right: 475px;
   margin-top: 250px;
 }
-
 .logo {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
 .home {
   float: left;
   margin-left: 12px;
   margin-top: 8px;
 }
-
 .row {
   --bs-gutter-x: 0rem !important;
 }
-
 .min-vh-100 {
     min-height: 90vh!important;
 }
-
 .box {
   width: 100px;
   height: 100px;
@@ -230,15 +187,12 @@ body {
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
 .space {
   margin-left: 1% ;
 }
-
 .title-size {
   font-size: 54px;
 }
-
 .card {
   width: 300px;
   display: inline-block;
@@ -338,14 +292,12 @@ body {
     width: 300px;
     height: 300px;
   }
-
   .title {
     font-size: 25px;
   }
   .text {
     font-size: 15px;
   }
-
   .box {
     margin-left: 20px;
   }
