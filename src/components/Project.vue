@@ -1,11 +1,11 @@
 <template>
 <h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes projets</h1>
-<div class="row justify-content-md-center center" style="margin-top : 5.5rem;">
+<div class="row justify-content-md-center center __container" style="margin-top : 5.5rem;">
   <div v-for="item in images" :key="item.id" class="card" style="width: 18rem;">
     <div class="card-img card-img-top" :style="{ backgroundImage: `url('${item.image}')` }">
       <div class="overlay">
         <div class="overlay-content">
-          <a :href="item.link">View github</a>
+           <a :href="item.link">View github</a>
         </div>
       </div>
     </div>
@@ -178,10 +178,15 @@ export default {
   text-overflow: ellipsis;
   color: #ffffffc4;
 }
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 800px)
 {
   .box {
     margin-left: 20px;
+  }
+  .__container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

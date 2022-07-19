@@ -179,6 +179,10 @@ export default {
   height: 5px;
 }
 
+.title-size {
+  font-size: 54px;
+}
+
 @media only screen and (max-width: 1500px) {
   .card__content {
     grid-template-columns: 1fr 1fr;
