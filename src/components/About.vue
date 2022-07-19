@@ -8,9 +8,10 @@
 </div>
 
 <div class="row justify-content-md-center vertical-center d-flex align-items-center space min-vh-100">
-  <div class="col col-4 col-lg-4 test">
+  <div class="col col-4 col-lg-4 mbsize">
     <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px"></h1>
     <p class="title">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong></p>
+    <typing class="title"/>
   </div>
   <div class="col-md-auto space">
     <img src="@/assets/logo.png"  class="logo" width="400" height="400">
@@ -19,8 +20,10 @@
 </template>
 
 <script>
+import Typing from '@/components/Typing'
 export default {
     name:'AboutView',
+    components: {Typing}
 }
 </script>
 
@@ -66,7 +69,7 @@ export default {
   .text {
     font-size: 15px;
   }
-  .test {
+  .mbsize {
     width: 50%!important;
     margin-top: 10vh!important;
     margin-bottom: 5vh!important;
