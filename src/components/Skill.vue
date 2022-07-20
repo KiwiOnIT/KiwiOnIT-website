@@ -94,7 +94,7 @@ export default {
             image: require("../assets/img/npm.png")
           },
           {
-            name: "git",
+            name: "Git",
             image: require ("../assets/img/git.png")
           },
           {
