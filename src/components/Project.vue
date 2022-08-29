@@ -35,7 +35,7 @@ export default {
       },
       {
         name: "Para bot",
-        description: "Bot Discord Js v12",
+        description: "Bot Discord Js v14",
         link: "https://github.com/KiwiOnIT/Para-Bot",
         image: require("../assets/img/para.png"),
       },

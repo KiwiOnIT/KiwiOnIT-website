@@ -83,7 +83,7 @@
     font-weight: normal;
   }
 span.typed-text {
-  color: #ffffff;
+  color: #00ffff;
 }
     span.cursor {
       display: inline-block;
