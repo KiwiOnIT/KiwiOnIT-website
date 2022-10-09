@@ -2,7 +2,7 @@
 <h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes projets</h1>
 <div class="row justify-content-md-center center __container" style="margin-top : 5.5rem;">
   <div v-for="item in images" :key="item.id" class="card" style="width: 18rem;">
-    <div class="card-img card-img-top" :style="{ backgroundImage: `url('${item.image}')` }">
+    <div class="card-img card-img-top" :style="{ backgroundImage: `url('${item.image}')` }" alt="Project Image">
       <div class="overlay">
         <div class="overlay-content">
            <a :href="item.link">View github</a>
@@ -35,7 +35,7 @@ export default {
       },
       {
         name: "Para bot",
-        description: "Bot Discord Js v12",
+        description: "Bot Discord Js v14",
         link: "https://github.com/KiwiOnIT/Para-Bot",
         image: require("../assets/img/para.png"),
       },

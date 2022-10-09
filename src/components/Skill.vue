@@ -12,7 +12,7 @@
           <span v-if="['Compétences'].includes(skill.id)" class="percentage">{{ item.level }}%</span>
           <div class="card__jauge-bar">
               <div v-if="['Compétences'].includes(skill.id)" class="card__jauge-background"></div>
-              <div v-if="['Compétences'].includes(skill.id)" class="bar" :style="{ backgroundColor: item.color, width: `${item.level}%` }"></div>
+              <div v-if="['Compétences'].includes(skill.id)" class="bar" :style="{ backgroundColor: item.color, width: `${item.level}%` }" alt="Skill Image"></div>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default {
             image: require("../assets/img/npm.png")
           },
           {
-            name: "git",
+            name: "Git",
             image: require ("../assets/img/git.png")
           },
           {

@@ -2,25 +2,32 @@
 <div class="row">
   <div>
     <a href="https://github.com/KiwiOnIT" class="home">
-      <img src="@/assets/Watermark.png" height="40" class="homeIMG">
+      <img src="@/assets/Watermark.png" height="40" class="homeIMG" alt="Watermark">
     </a>
   </div>
 </div>
 
 <div class="row justify-content-md-center vertical-center d-flex align-items-center space min-vh-100">
-  <div class="col col-4 col-lg-4 test">
+  <div class="col col-4 col-lg-4 mbsize">
+<<<<<<< HEAD
     <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px"></h1>
+=======
+    <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px"></h1>
+>>>>>>> a039bca765d8ef97d148246fe09db20bc511de8d
     <p class="title">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong></p>
+    <typing class="title"/>
   </div>
   <div class="col-md-auto space">
-    <img src="@/assets/logo.png"  class="logo" width="400" height="400">
+    <img src="@/assets/logo.png"  class="logo" width="400" height="400" alt="My logo">
   </div>
 </div>
 </template>
 
 <script>
+import Typing from '@/components/Typing'
 export default {
     name:'AboutView',
+    components: {Typing}
 }
 </script>
 
@@ -36,7 +43,7 @@ export default {
 }
 
 .title-name {
-  color:aqua;
+  color:#00ffff;
   font-weight: bold;
 }
 .logoDiv {
@@ -66,7 +73,7 @@ export default {
   .text {
     font-size: 15px;
   }
-  .test {
+  .mbsize {
     width: 50%!important;
     margin-top: 10vh!important;
     margin-bottom: 5vh!important;
