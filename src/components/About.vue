@@ -9,11 +9,7 @@
 
 <div class="row justify-content-md-center vertical-center d-flex align-items-center space min-vh-100">
   <div class="col col-4 col-lg-4 mbsize">
-<<<<<<< HEAD
     <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px"></h1>
-=======
-    <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px"></h1>
->>>>>>> a039bca765d8ef97d148246fe09db20bc511de8d
     <p class="title">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong></p>
     <typing class="title"/>
   </div>
