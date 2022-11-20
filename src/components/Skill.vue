@@ -43,7 +43,7 @@ export default {
           },
           {
             name: "CSS",
-            level: 40,
+            level: 50,
             color: "#006eba",
             image: require("../assets/img/css3.png")
           },
@@ -55,19 +55,19 @@ export default {
           },
           {
             name: "VueJs",
-            level: 40,
+            level: 55,
             color: "#42b883",
             image: require("../assets/img/vuejs.png")
           },
           {
             name: "Javascript",
-            level: 55,
+            level: 70,
             color: "#f0db4f",
             image: require("../assets/img/javascript.png")
           },
           {
             name: "Python",
-            level: 30,
+            level: 35,
             color: "#009cff",
             image: require("../assets/img/python.png")
           }
