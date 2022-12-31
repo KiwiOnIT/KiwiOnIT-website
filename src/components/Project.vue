@@ -62,12 +62,6 @@ export default {
         description: "Mini jeu codé en C++",
         link: "https://github.com/KiwiOnIT/PlusOuMoins",
         image: require ("../assets/img/Guess-a-number.png")
-      },
-      {
-        name: "Generateur de sceenshot",
-        description: "Generateur de screenshot en VueJs",
-        link: "https://github.com/KiwiOnIT/random-screen-generator",
-        image: require("../assets/img/gen-sc.png")
       }
     ]
   }
