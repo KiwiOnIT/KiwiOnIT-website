@@ -1,6 +1,6 @@
 <template>
 <h1 class="text-white title-size" style="margin-top : 10.75rem;">Mes projets</h1>
-<div class="row justify-content-md-center center __container" style="margin-top : 5.5rem;">
+<div class="__container" style="margin-top : 5.5rem;">
   <div v-for="item in images" :key="item.id" class="card" style="width: 18rem;">
     <div class="card-img card-img-top" :style="{ backgroundImage: `url('${item.image}')` }" alt="Project Image">
       <div class="overlay">
@@ -62,7 +62,12 @@ export default {
         description: "Mini jeu codé en C++",
         link: "https://github.com/KiwiOnIT/PlusOuMoins",
         image: require ("../assets/img/Guess-a-number.png")
+<<<<<<< HEAD
+      },
+     }
+=======
       }
+>>>>>>> a83c626c561ee25b6e299fa8c2df06010cb1485e
     ]
   }
 }
@@ -147,7 +152,6 @@ export default {
   border-color: #5ea4cc;
 }
 .card-content {
-  width: 100%;
   min-height: 104px;
   background-color: rgb(50, 50, 50)!important;
   border-top: 1px solid #181717!important;

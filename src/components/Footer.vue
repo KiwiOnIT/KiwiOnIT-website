@@ -1,10 +1,8 @@
 <template>
-<div class="container">
-  <div class="mt-5 border-top">
-    <footer class="py-3 my-4">
-      <p class="text-center text-white">© Made in 2022 by KiwiOnIT</p>
-  </footer>
-  </div>
+<div class="bar">
+  <br>
+  <p class="footer">© 2023 | Made with ❤️ by Kiwi</p>
+  <br>
 </div>
 </template>
 
@@ -13,3 +11,22 @@ export default {
     name: 'FooterView'
 }
 </script>
+
+<style scoped>
+  .bar{
+    height: 1px;
+    width: 50vw;
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+  }
+
+  .footer{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+</style>

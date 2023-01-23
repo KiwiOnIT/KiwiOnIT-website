@@ -3,7 +3,7 @@
   <div v-for="skill in images" :key="skill.id">
     <h1 class="text-white title-size" style="margin-top : 3.75rem;">{{skill.idName}}</h1>
     <div class="card__content">
-      <div v-for="item in skill[skill.id]" :key="item.id">
+      <div v-for="item in skill[skill.id]" :key="item.id" class="box__shadow">
         <div class="card__banner" :style="{ backgroundImage: `url('${item.image}')` }"></div>
         <h3 class="card__name">
           <strong>{{item.name}}</strong>
@@ -118,6 +118,9 @@ export default {
   margin: 1.5rem 0 2rem;
 }
 
+.box__shadow{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 .card__name {
   margin-bottom: 0rem;
   padding: .5rem .75rem 0;
@@ -152,7 +155,6 @@ export default {
   background-color: rgb(50, 50, 50);
   justify-content: flex-start;
   padding: .5rem .75rem;
-  width: 100%;
   border-radius:0px 0px 8px 8px;
 }
 .percentage {
