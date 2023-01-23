@@ -63,8 +63,6 @@ export default {
         link: "https://github.com/KiwiOnIT/PlusOuMoins",
         image: require ("../assets/img/Guess-a-number.png")
       },
-     }
-     }
     ]
   }
 }
