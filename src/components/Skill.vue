@@ -3,16 +3,18 @@
   <div v-for="skill in images" :key="skill.id">
     <h1 class="text-white title-size" style="margin-top : 3.75rem;">{{skill.idName}}</h1>
     <div class="card__content">
-      <div v-for="item in skill[skill.id]" :key="item.id" class="box__shadow">
+      <div v-for="item in skill[skill.id]" :key="item.id" class="box">
         <div class="card__banner" :style="{ backgroundImage: `url('${item.image}')` }"></div>
-        <h3 class="card__name">
-          <strong>{{item.name}}</strong>
-        </h3>
+        <div class="card__bottom">
+          <h3 class="card__name">
+            <strong>{{item.name}}</strong>
+          </h3>
         <div class="card__jauge">
           <span v-if="['Compétences'].includes(skill.id)" class="percentage">{{ item.level }}%</span>
           <div class="card__jauge-bar">
               <div v-if="['Compétences'].includes(skill.id)" class="card__jauge-background"></div>
               <div v-if="['Compétences'].includes(skill.id)" class="bar" :style="{ backgroundColor: item.color, width: `${item.level}%` }" alt="Skill Image"></div>
+        </div>
           </div>
         </div>
       </div>
@@ -43,7 +45,7 @@ export default {
           },
           {
             name: "CSS",
-            level: 50,
+            level: 40,
             color: "#006eba",
             image: require("../assets/img/css3.png")
           },
@@ -55,19 +57,19 @@ export default {
           },
           {
             name: "VueJs",
-            level: 55,
+            level: 40,
             color: "#42b883",
             image: require("../assets/img/vuejs.png")
           },
           {
             name: "Javascript",
-            level: 70,
+            level: 55,
             color: "#f0db4f",
             image: require("../assets/img/javascript.png")
           },
           {
             name: "Python",
-            level: 35,
+            level: 30,
             color: "#009cff",
             image: require("../assets/img/python.png")
           }
@@ -118,7 +120,7 @@ export default {
   margin: 1.5rem 0 2rem;
 }
 
-.box__shadow{
+.box{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .card__name {
@@ -128,6 +130,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-size: 28px;
+  margin: 0;
 }
 
 .card__banner {
@@ -195,10 +199,18 @@ export default {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .card__banner {
     background-size: 100% 150px;
     height: 140px;
+  }
+  .card__content {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .title-size{
+    font-size: 48px
   }
 }
 </style>

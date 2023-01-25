@@ -62,12 +62,7 @@ export default {
         description: "Mini jeu codé en C++",
         link: "https://github.com/KiwiOnIT/PlusOuMoins",
         image: require ("../assets/img/Guess-a-number.png")
-<<<<<<< HEAD
       },
-     }
-=======
-      }
->>>>>>> a83c626c561ee25b6e299fa8c2df06010cb1485e
     ]
   }
 }
@@ -185,6 +180,10 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .title-size{
+    font-size: 48px
   }
 }
 </style>

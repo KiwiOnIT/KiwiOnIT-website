@@ -78,17 +78,31 @@ export default {
   text-align: left;
   width: fit-content;
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
   .logo {
     width: 300px;
     height: 300px;
   }
   .title {
-    font-size: 25px;
+    font-size: 24px;
+    text-align: center;
   }
   .text {
     font-size: 15px;
+  }
+  .container {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .content-1 {
+    order: 1;
+    max-width: 100%;
+  }
+  .content-2 {
+    order: 2;
   }
 }
 </style>

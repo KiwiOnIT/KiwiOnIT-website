@@ -60,13 +60,12 @@
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Righteous');
   body {
     margin: 0;
     padding: 0;
   }
   #app {
-    font-family: 'Righteous', arial;
+    font-family: Marianne, Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 40px;
     color: #fff;
@@ -99,5 +98,11 @@ span.typed-text {
     49% { background-color: #fff; }
     50% { background-color: transparent; }
     99% { background-color: transparent; }
+  }
+
+  @media screen and (max-width: 800px){
+    h1{
+      font-size: 24px;
+    }
   }
 </style>
