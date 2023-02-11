@@ -7,8 +7,8 @@
 
 <div class="container">
   <div class="content-1">
-    <h1 class="title">Salut !<img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px" alt="Hey emojie"></h1>
-    <p class="title">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong></p>
+    <h1 class="title">Salut !</h1>
+    <p class="text">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong> j'ai 15 ans, je suis un jeune développeur passionné par la cybersécurité, je fais de mon mieux pour apprendre les bases de l'informatique</p>
     <typing class="title typing"/>
   </div>
   <div class="content-2">
@@ -36,6 +36,11 @@ export default {
   text-align: left;
 }
 
+.text{
+  text-align: left;
+  color: rgb(201, 199, 199);
+  font-size: 24px;
+}
 .title-name {
   color:#00ffff;
   font-weight: bold;
@@ -61,8 +66,8 @@ export default {
 
 .content-1 {
   flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-  margin-right: 1%;
+  max-width: 26%;
+  margin-right: 4%;
 }
 
 .content-2 {
@@ -90,6 +95,7 @@ export default {
   }
   .text {
     font-size: 15px;
+    text-align: center;
   }
   .container {
     flex-direction: column;
@@ -100,6 +106,7 @@ export default {
   .content-1 {
     order: 1;
     max-width: 100%;
+    margin-right: 0;
   }
   .content-2 {
     order: 2;
