@@ -8,7 +8,7 @@
 <div class="container">
   <div class="content-1">
     <h1 class="title">Salut !</h1>
-    <p class="text">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong> j'ai 15 ans, je suis un jeune développeur passionné par la cybersécurité, je fais de mon mieux pour apprendre les bases de l'informatique</p>
+    <p class="text">Je m'appelle <strong class="title-name">Anthonin (Kiwi)</strong> j'ai 16 ans, je suis un jeune développeur passionné par la cybersécurité, je fais de mon mieux pour apprendre les bases de l'informatique</p>
     <typing class="title typing"/>
   </div>
   <div class="content-2">
