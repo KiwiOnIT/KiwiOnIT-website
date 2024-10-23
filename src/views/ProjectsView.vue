@@ -77,6 +77,7 @@
   <style scoped>
   .projects-section {
     padding: 1rem;
+    margin-top: 3vh;
   }
   
   .title-margin {

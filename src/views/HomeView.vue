@@ -9,13 +9,34 @@
       <img src="@/assets/logo.png" class="logo" width="400" height="400" />
     </div>
   </div>
-  <div class="space"></div>
+    <!-- Snake game, only shown on PC -->
+    <div class="snake-container" v-if="isPC">
+      <SnakeGame />
+    </div>
 </template>
 
 <script>
 import Typing from '../components/Typing.vue'
+import SnakeGame from '../components/SnakeGame.vue'
+
 export default {
-  components: { Typing }
+  components: { Typing, SnakeGame },
+  data() {
+    return {
+      isPC: window.innerWidth > 800 // Only show on PC-sized screens
+    };
+  },
+  mounted() {
+    window.addEventListener('resize', this.checkScreenSize);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkScreenSize);
+  },
+  methods: {
+    checkScreenSize() {
+      this.isPC = window.innerWidth > 800;
+    }
+  }
 }
 </script>
 
@@ -92,6 +113,10 @@ export default {
   width: fit-content;
 }
 
+.snake-container {
+  margin-top:40vh;
+}
+
 @media screen and (max-width: 800px) {
   .logo {
     width: 300px;
@@ -110,6 +135,9 @@ export default {
   }
   .content-1 {
     margin-right: 0;
+  }
+  .snake-container {
+    display: none;
   }
 }
 </style>

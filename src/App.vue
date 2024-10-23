@@ -1,11 +1,3 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Background from './components/Background.vue'
-import { ref } from 'vue';
-
-const isNavOpen = ref(false);
-</script>
-
 <template>
   <Background />
   <header id="header">
@@ -13,9 +5,9 @@ const isNavOpen = ref(false);
       <img src="@/assets/Watermark.png" height="40" class="homeIMG" alt="Watermark">
     </a>
     <nav :class="{ 'open': isNavOpen }">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
+      <RouterLink to="/" @click="closeNav">Home</RouterLink>
+      <RouterLink to="/about" @click="closeNav">About</RouterLink>
+      <RouterLink to="/projects" @click="closeNav">Projects</RouterLink>
     </nav>
     <button @click="isNavOpen = !isNavOpen" class="hamburger" aria-label="Toggle navigation">
       <span class="bar"></span>
@@ -28,8 +20,20 @@ const isNavOpen = ref(false);
     <br>
     <p class="footer">© 2024 | Made with ❤️ by Kiwi</p>
     <br>
-</div>
+  </div>
 </template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import Background from './components/Background.vue'
+import { ref } from 'vue';
+
+const isNavOpen = ref(false);
+
+const closeNav = () => {
+  isNavOpen.value = false;
+};
+</script>
 
 <script>
 window.onscroll = function() {
@@ -50,6 +54,7 @@ window.onscroll = function() {
   text-align: center;
   color: #ffffff;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -60,11 +65,12 @@ header {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(1rem);
+  background-color: rgba(26, 27, 38, 0.6);
   transition: background-color 0.3s ease;
 }
 
 header.scrolled {
-  background-color: rgba(26,27,38,0.8);
+  background-color: rgba(26, 27, 38, 0.8);
 }
 
 nav {
@@ -80,19 +86,39 @@ nav {
 
 nav.open {
   display: block;
+  background-color: rgba(26, 27, 38, 0.8);
+  backdrop-filter: blur(1rem);
 }
 
 nav a {
-  color: #D499B9;
+  color: #ffffff; /* Texte de base en blanc */
   text-decoration: none;
   padding: 5px 15px;
   display: flex;
   align-items: center;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #D499B9; /* Couleur de la barre */
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 nav a:hover {
-  color: #c0caf5;
+  color: #D499B9; /* Couleur du texte au survol */
 }
 
 .home {
@@ -122,24 +148,24 @@ RouterView {
   transition: all 0.3s ease;
 }
 
-.bar-footer{
-    height: 1px;
-    width: 50vw;
-    background-color: #D499B9;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3vh;
-    text-align: center;
-  }
+.bar-footer {
+  height: 1px;
+  width: 50vw;
+  background-color: #D499B9;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  text-align: center;
+}
 
-  .footer{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: #fff;
-  }
+.footer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+}
 
 @media (max-width: 768px) {
   nav {
@@ -153,15 +179,18 @@ RouterView {
     padding: 15px;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
   }
-  
+
   nav.open {
     display: flex;
     max-height: 200px;
+    background-color: rgba(26, 27, 38, 0.99);
+    backdrop-filter: blur(1rem);
   }
 
-  .home{
-    margin-top:10px;
+  .home {
+    margin-top: 10px;
   }
 
   .hamburger {
