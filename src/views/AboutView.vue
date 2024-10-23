@@ -177,10 +177,12 @@ export default {
   max-width: 200px;
   width: 100%;
   box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
+  border: 1px solid #D499B9
 }
 
 .box:hover {
   transform: scale(1.05);
+  border: 2px solid #dd80b3;
 }
 
 .card__image {

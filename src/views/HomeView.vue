@@ -87,7 +87,7 @@ export default {
 }
 
 .container-home {
-  margin-top: 25vh;
+  margin-top: 30vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;

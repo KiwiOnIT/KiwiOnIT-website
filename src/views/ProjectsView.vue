@@ -101,10 +101,13 @@
     overflow: hidden;
     box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
     transition: transform 0.2s ease;
+    box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
+    border: 1px solid #D499B9
   }
   
   .card:hover {
     transform: translateY(-4px);
+    border: 2px solid #dd80b3;
   }
   
   .card-img {
