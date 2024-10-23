@@ -99,9 +99,8 @@
     margin: 1rem;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
+    box-shadow: #D499B9 0px 2px 4px 0px, #D499B9 0px 2px 16px 0px
     transition: transform 0.2s ease;
-    box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
     border: 1px solid #D499B9
   }
   
