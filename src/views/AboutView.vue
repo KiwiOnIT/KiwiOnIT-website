@@ -21,7 +21,7 @@
          <div class="timeline-item">
            <div class="timeline-circle"></div>  
            <div class="timeline-content">
-             <strong>Soon (i hope im accepted in prépa)</strong>
+             <strong>Soon (I hope Im accepted in prépa)</strong>
            </div>
          </div>
        </div>
@@ -176,7 +176,7 @@ export default {
   transition: transform 0.2s;
   max-width: 200px;
   width: 100%;
-  box-shadow: #D499B9 0px 1px 3px, #D499B9 0px 1px 2px;
+  box-shadow: #D499B9 0px 2px 4px 0px, #D499B9 0px 2px 16px 0px
   border: 1px solid #D499B9
 }
 
