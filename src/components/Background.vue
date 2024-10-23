@@ -17,7 +17,7 @@ const getStarStyle = () => {
     position: 'absolute',
     borderRadius: '50%',
     backgroundColor: 'rgba(255, 255, 255, 0.8)',
-    animation: 'twinkle 3s infinite', // Adjusted animation duration
+    animation: 'twinkle 3s infinite',
     opacity: Math.random(),
     width: size,
     height: size,
