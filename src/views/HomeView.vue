@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-home">
     <div class="content-1">
       <h1 class="title">Hey !<span class="wave-emoji">👋🏻</span></h1>
       <p class="text">I'm <strong class="title-name">Anthonin</strong> a.k.a <strong class="title-name">KiwiOnIT</strong></p>
@@ -23,7 +23,7 @@ export default {
   components: { Typing, SnakeGame },
   data() {
     return {
-      isPC: window.innerWidth > 800 // Only show on PC-sized screens
+      isPC: window.innerWidth > 800
     };
   },
   mounted() {
@@ -86,7 +86,7 @@ export default {
   border-radius: 16px;
 }
 
-.container {
+.container-home {
   margin-top: 25vh;
   display: flex;
   justify-content: center;
@@ -128,10 +128,10 @@ export default {
   .text {
     font-size: 18px;
   }
-  .container {
+  .container-home {
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   .content-1 {
     margin-right: 0;

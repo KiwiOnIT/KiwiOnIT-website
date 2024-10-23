@@ -91,7 +91,7 @@ nav.open {
 }
 
 nav a {
-  color: #ffffff; /* Texte de base en blanc */
+  color: #ffffff;
   text-decoration: none;
   padding: 5px 15px;
   display: flex;
@@ -106,7 +106,7 @@ nav a::after {
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #D499B9; /* Couleur de la barre */
+  background-color: #D499B9;
   bottom: 0;
   left: 50%;
   transition: width 0.3s ease, left 0.3s ease;
@@ -118,7 +118,7 @@ nav a:hover::after {
 }
 
 nav a:hover {
-  color: #D499B9; /* Couleur du texte au survol */
+  color: #D499B9;
 }
 
 .home {
