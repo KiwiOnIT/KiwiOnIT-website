@@ -21,7 +21,7 @@
          <div class="timeline-item">
            <div class="timeline-circle"></div>  
            <div class="timeline-content">
-             <strong>Soon (I hope Im accepted in prépa)</strong>
+             <strong>BUT Info - Le Havre</strong>
            </div>
          </div>
        </div>
